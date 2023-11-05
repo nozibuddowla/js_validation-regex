@@ -12,26 +12,31 @@
         <span>HTML, CSS, </span> & <span> JS </span> form validation using pattern RegEx Data Validation App
     </h1>
 
-    <form id="validationForm" class="row g-3">
-        <div class="col-12">
-            <label for="dataType">Select data type to validate:</label>
-            <select id="dataType" class="form-select mb-3 col-auto" aria-label="Default select example">
-                <option value="email">Email</option>
-                <option value="phone">Phone Number</option>
-                <option value="postcode">Post Code</option>
-            </select>
-        </div>
-        
-        <div class="col-12">
-            <label for="inputData">Enter data to validate:</label>
-            <input type="text" class="form-control" id="inputData" >
-        </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary">Validate</button>
-        </div>
-    </form>
+    <div class="form-container">
+        <form id="validationForm" class="row g-3">
+            <div class="col-12">
+                <label for="dataType">Select data type to validate:</label>
+                <select id="dataType" class="form-select mb-3 col-auto" aria-label="Default select example">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone Number</option>
+                    <option value="postcode">Post Code</option>
+                </select>
+            </div>
+            
+            <div class="col-12">
+                <label for="inputData">Enter data to validate:</label>
+                <input type="text" class="form-control" id="inputData" >
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Validate</button>
+            </div>
+        </form>
 
-    <div id="result"></div>
+        <div id="result"></div>
+    </div>
+    
+
+    
 
 
     <script src="js/main.js"></script>
